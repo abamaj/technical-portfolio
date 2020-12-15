@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./resources/css/layout.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="flickr.html">Photo Gallery<span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <form name = "photoForm" class = "form-inline" action ="" method="POST">
+          <div class="form-group">
+            <select class="custom-select" id = "photoNum">
+                <option selected>--Number of photos--</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="70">70</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name = "name"
+              placeholder="Enter tags"
+              id="tag"
+              value=""
+            />
+            <input type="button" onclick="clear();makeApiCall()" value="Submit">
+          </div>
+        </form>
+      </div>
+      <hr>
+      <div class="row" id = "photogallery">
+        <div class ="card-deck">
+
+        </div>
+      </div>
+    </div>
+<br>
+<script>
+window.onscroll = function(par) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      clear();
+      return makeApiCall();
+    }
+};
+</script>
+    <script type="text/javascript" src="./resources/js/script.js"></script>
+  </body>
+</html>
