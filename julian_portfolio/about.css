@@ -1,0 +1,122 @@
+
+@font-face {
+    src: url(NEON_CLUB_MUSIC.otf);
+    font-family: neon;
+}
+
+body{
+    background-image: url(graph.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.hey{
+    font-size: 80px;
+    margin-top: 200px;
+    margin-left: 30px;
+    font-family: neon;
+    color: white;
+    animation: animate .05s ease-in-out infinite;
+}
+@keyframes animate{
+    from{
+        text-shadow: 0 0 20px #FFFFFF;
+    }
+    TO{
+        text-shadow: 0 0 20px #FFFFFF,
+                     0 0 20px #FFFFFF;
+    }
+}
+
+.name{
+    margin-left: 1050px;
+    font-size: 80px;
+    margin-top: -80px;
+    font-family: neon;
+}
+
+.link{
+    margin-top: 600px;
+    margin-left: 1625px;
+    position: fixed;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 90px;
+    box-sizing: border-box;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    font-family: neon;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    /* animation: animate 3s ease-in-out infinite; */
+}
+
+.navBar{
+    margin-left: -375px;
+}
+
+nav ul li a:hover{
+    color: #ff0005;
+    text-shadow: 0 0 10px #ff0005;
+}
+
+.scrollArea{
+    scroll-snap-type: y mandatory;
+}
+.somed{
+    position: fixed;
+    /* top: 0px;
+    left: 0px;
+    margin-top: 10px;
+    margin-right: 30px; */
+    margin-top: 585px;
+    margin-left: 1500px;
+}
+
+
+.somed ul{
+    margin-left: -20px;
+    list-style: none;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+    
+}
+
+.text{
+    color: white;
+    width: 400px;
+    height: 100px;
+    font-family: neon;
+    margin: 0 5px;
+    font-size: 25px;
+    /* text-shadow: 0 0 40px #ff0005; */
+}
+
+.top{
+    animation: animate 3s ease-in-out infinite;
+}
+
