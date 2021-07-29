@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>
+		JavaScript Clock Demo
+	</title>
+
+</head>
+
+<body>
+
+
+<!-- attempted fetch api for ip address  -->
+<!-- <p id="data">
+	<script type="text/JavaScript">
+		fetch('https://api.ipify.org/?format=json')
+			.then(function(response){
+				return response.json();
+			})
+			.then(function(data){
+				for(var i = 0; i < data.length; i++){
+					document.getElementById("data").innerHTML += data[i].ip  + "<br />";
+				}
+			}).catch(function(error){
+				console.error('Something Went Wrong');
+				console.error(error);
+			});
+	</script>
+	</p> -->
+	
+
+<div id="wrapper">
+
+	<div id="timer">
+
+		<span id="hour">11</span>
+		:
+		<span id="minute">59</span>
+		:
+		<span id="second">59</span>
+		<span id="meridiem">pm</span>
+
+	</div>
+
+	<div id="calendar">
+
+		<span id="day">Monday</span>, 
+		<span id="month">Dec</span>
+		<span id="date">31</span>
+		<span id="year">1999</span>
+
+	</div>
+
+</div>
+
+
+
+
+<!-- <a onclick="toggleTwelve()">Toggle Time</a> -->
+
+
+<script src="js/clock.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
