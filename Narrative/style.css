@@ -1,0 +1,99 @@
+@font-face {
+    src: url(RockSalt-Regular.ttf);
+    font-family: Rock Salt;
+}
+@font-face {
+    src: url(DoubleFeature20.ttf);
+    font-family: shlop;
+}
+
+@font-face {
+    src: url(StepwyzeRegular-X3qaK.ttf);
+    font-family: stairs;
+}
+
+@font-face {
+    src: url(GABRWFFR.TTF);
+    font-family: Friends;
+}
+
+@font-face {
+    src: url(alarm_clock.ttf);
+    font-family: alarm;
+}
+
+@font-face {
+    src: url(Futura-Std-Bold-Oblique.ttf);
+    font-family: overcome;
+}
+
+@font-face{
+    src: url(heart-sweet-heart.ttf);
+    font-family: crazy;
+}
+
+@font-face {
+    src: url(Granjon.otf);
+    font-family: drip;
+}
+
+body{
+    background-image: url(IMG_0413.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.PA{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.songs{ 
+    color: #e9bc38;
+    font-family: Rock Salt;
+    margin-top: 25px;
+}
+
+.b{
+    color: #ecbc18;
+    font-family: shlop;
+}
+
+.names{
+    font-size: 30px;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.stairs{
+    color: #ecbc18;
+    font-family: stairs;
+}
+
+.friends{
+    color: #ecbc18;
+    font-family: friends;
+    font-size: 20px;
+}
+
+.game{
+    color: #ecbc18;
+    font-family: alarm;
+}
+
+.overcome{
+    color: #ecbc18;
+    font-family: overcome;
+}
+
+.crazy{
+    color: #ecbc18;
+    font-family: crazy;
+}
+
+.dripping{
+    color: #ecbc18;
+    font-family: drip;
+}

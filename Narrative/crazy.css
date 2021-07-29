@@ -1,0 +1,69 @@
+@font-face{
+    src: url(heart-sweet-heart.ttf);
+    font-family: crazy;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black !important;
+}
+
+
+.heart{
+    height: 70px;
+    width: 70px;
+    background: #e9bc38;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #e9bc38;
+    animation: heart .6s linear infinite;
+}
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+.heart:before{
+    content: '';
+    content: attr(data-tooltip);
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #e9bc38;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #e9bc38;
+
+}
+
+.heart:after{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #e9bc38;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #e9bc38;
+}
+
+.poem{
+    color: #e9bc38;
+    /* margin-left: 00px; */
+    font-family: crazy;
+}
+
+
+
